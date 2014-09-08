@@ -1,0 +1,11 @@
+node_modules
+dist
+.idea
+.tmp
+.sass-cache
+bower_components
+test/bower_components
+Gemfile.lock
+app/images/sprites/*.png
+.DS_Store
+config.codekit
