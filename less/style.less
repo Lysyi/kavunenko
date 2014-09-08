@@ -27,7 +27,6 @@
   @import "base/_print";        // Print Page Styles
   
   body {
-    background-color: #000;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
   }
@@ -38,8 +37,31 @@
     }
   }
 
+  .main-container, .pop-up-container {
+    z-index: 12;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+  }
+
+  .closs-btn {
+    .border-radius(25px);
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 0 10px; 
+    background-image: url(../images/close.svg);
+    background-size: 65% 65%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
   .main-block {
     .border-radius(20px);
+    z-index: 10;
     position: absolute;
     width: 840px;
     left: 0px;
@@ -81,7 +103,15 @@
     float: right;
     padding: 18px 30px 0 0;
     color: #212121;
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .enter {
+    float: right;
+    padding: 18px 30px 0 0;
+    color: #212121;
+    font-size: 14px; 
+    text-decoration: none;
   }
 
   .header-closs-btn {
@@ -247,6 +277,18 @@
     background-size: 100% 100%;
     background-repeat: no-repeat; 
   }
+
+  .lucky-btn {
+    .border-radius(5px);
+    display: block;
+    margin: 250px 0 0 0;
+    padding: 15px 0;
+    background-color: #1c75bc;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none; 
+  }
   
   .price-container {
     .border-radius(15px);
@@ -293,10 +335,123 @@
     text-decoration: none; 
   }
   
+  .pop-up-block {
+    .border-radius(20px);
+    z-index: 13;
+    position: absolute;
+    width: 640px;
+    height: 440px;
+    margin: -220px 0 0 -320px;
+    top: 50%;
+    left: 50%;
+    background-color: #575757;
+    .title {
+      margin: 15px 0;
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+    }
+  }
 
+  .pop-up-header {
+    .borders-radius(20px, 0, 0, 20px);
+    height: 60px;
+    background-color: #fff;
+    text-align: center;
+  }
 
+  .pop-up-content {
+    padding: 20px 0 30px 0;
+    background-color: #474747;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .f-btn, .v-btn, .t-btn {
+    .border-radius(5px);
+    display: block;
+    padding: 10px 0;
+    background-color: #4b89dc;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none; 
+  }  
 
+  .v-btn {
+    background-color: #6b9fe3;
+  }
 
+  .t-btn {
+    background-color: #4fc0e8;
+  }
+  
+  .send-discount-form {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    .input {
+      .border-radius(5px);
+      display: inline-block;
+      width: 320px;
+      margin: 0 10px 0 0;
+      padding: 15px;
+      color: #2e2e2e;
+      font-size: 12px;
+    }
+    .submit {
+      .border-radius(5px);
+      display: inline-block;
+      width: 100px;
+      padding: 15px;
+      border: none;
+      background-color: #0688d4;
+      color: #fff;
+      font-size: 12px;
+    }
+  }
 
+  .coupon-container {
+    position: relative;
+    width: 560px;
+    height: 600px;
+    margin: 40px auto;
+  }
+
+  .coupon-block {
+    z-index: 11;
+    position: absolute;
+    width: 560px;
+    height: 420px;
+    background-image: url(../images/coupon-bg01-3-2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+  }
+
+  .coupon-cover {
+    z-index: 13;
+    position: absolute;
+    width: 560px;
+    height: 420px;
+    top: 160px;
+    background-image: url(../images/coupon-bg01-2-2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+  }
+
+  .coupon-content {
+    z-index: 13;
+    position: absolute;
+    width: 520px;
+    height: 420px;
+    top: -80px;
+    left: 20px;
+    background-image: url(../images/coupon-bg02-2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+  }
+
+  
 
 
