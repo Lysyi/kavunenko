@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "description": "",
+  "version": "",
+  "keywords": [
+    "web"
+  ],
+  "homepage": "",
+  "author": "Lysyi",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "style": "css/style.css",
+  "less": "less/style.less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lysyi/remit-test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1",
+  },
+  "engines": {
+    "node": "~0.10.1"
+  }
+}
