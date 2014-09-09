@@ -32,14 +32,26 @@
   
   .main-basket-block{
     top: -20px;
+    height: 200px;
+  }
+
+  .right-sidebar {
+    padding-top: 0;
+    .take-btn {
+      float: right;
+      margin: -80px 0 20px 0;
+      width: 47%;
+    }
   }
 
   .price-container {
     width: auto;
-    .discount {
-      width: 50% !important;
-      margin: 10px auto;
-    }
+    padding: 0 0 0 0;
+    background-color: none;
+    // .discount {
+    //   width: 50% !important;
+    //   margin: 10px auto;
+    // }
   }
 
 }
@@ -58,6 +70,14 @@
   .item-price {
     font-size: 18px;
   }
+  
+  .main-basket-block{
+    height: 240px; 
+  }
+
+  .take-btn {
+    margin: -80px 0 20px 0 !important;
+  }
 }
 
 
@@ -70,6 +90,11 @@
 
   .main-block {
     min-height: 520px;
+    margin: 30px auto;
+  }
+
+  .pop-up-block {
+    margin: 30px auto; 
   }
 
   .left-sidebar {
@@ -121,15 +146,25 @@
       color: #5cc99e;
     }
   }
-
+  
   .price-container {
+    .border-radius(15px);
     width: 200px;
-    .discount {
-      width: auto !important;
-      margin: 5px 25px !important;
-    }
+    margin: 0 0 20px 0;
+    padding: 20px;
+    background-color: #e8e8e8;
+    color: #919191;
+    font-size: 13px;
+    line-height: 18px;
   }
 
+  .take-btn {
+    float: none !important;
+    top: auto !important;
+    margin: 10px 0 0 0 !important;
+    width: auto !important;
+  }
+  
 }
 
 /* Medium devices (desktops) */
