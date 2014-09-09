@@ -27,48 +27,52 @@
 
 <div class="main-container">
   <div class="main-block">
-    <div class="header-block row clear">
-      <div class="col col-2">
-        <div class="main-logo">LUCKYPRICE</div>
-      </div>
-      <div class="col col-10">
+    <div class="header-block">
         <a href="#" class="header-closs-btn"></a>
-        <div class="user-name"></div>
-        <a href="#" class="header-login">Войти</a>
+        <div class="user-name no-mobile"></div>
+        <a href="#" class="header-login no-mobile">Войти</a>
         <div class="user-avatar"></div>
-        <div class="attempts-block">
-          <div class="attempts" data-ix="flying-num">6</div>
-          попыток
+        <div class="attempts-block no-mobile">
+          <div class="attempts">6</div>
+          <span>попыток</span>
+        </div>
+        <div class="main-logo mobile-left">LUCKYPRICE</div>
+    </div>
+    <div class="left-sidebar mobile-full mobile-no-float">
+      <div class="item-title show-mobile no-tablet no-desktop">Детский свитер Sela</div>
+      <div class="item-container mobile-col-1-2 mobile-left">
+        <div class="item-photo">
+          <img src="images/img1.jpg">
+        </div>
+        <div class="item-title no-mobile">Детский свитер Sela</div>
+        <div class="item-price">Цена: 420 грн.</div>
+        <div class="clear">
+          <a href="#" class="item-btn btn">Cайт</a>
         </div>
       </div>
     </div>
-    <div class="left-sidebar">
-      <div class="item-container">
-        <div class="item-photo"><img src="images/img1.jpg"></div>
-        <div class="item-title">Детский свитер Sela</div>
-        <div class="item-price">Цена: 420 грн.</div>
-        <a href="#" class="item-btn btn">Cайт</a>
-      </div>
-      <a href="#" class="add-click-btn btn">Добавить клики</a>
-    </div>
-    <div class="main-basket-container">
+    <div class="main-basket-container mobile-col-1-2 mobile-right">
       <div class="main-basket-block">
         Новая цена
         <div class="price">3 055<sup>00</sup></div>
         <span>гривен</span>
         <div class="discount">Скидка: 5%</div>
       </div>
-      <div class="main-basket-cover"></div>
-      <a href="#" class="lucky-btn btn">Мне повезет</a>
+      <div class="main-basket-cover no-mobile"></div>
     </div>
-    <div class="right-sidebar">
+    <div class="right-sidebar mobile-no-float">
       <div class="price-container">
-        <div class="arrow-ico"></div>
-        Предидущая скидка была меньше.
-        <div class="discount">Скидка: 5%</div>
+        <div class="no-mobile">
+          <div class="arrow-ico"></div>
+          Предидущая скидка была меньше.
+        </div>
+        <div class="discount no-mobile">Скидка: 5%</div>
         <a href="#" class="take-btn btn">Забрать купон</a>
       </div>
-      <a href="#" class="one-more-btn btn">Попробовать еще</a>
+      <a href="#" class="one-more-btn btn">
+        <span class="show-mobile no-tablet no-desktop">7</span>Попробовать еще
+      </a>
+      <a href="#" class="add-click-btn btn">Добавить клики</a>
     </div>
   </div>
 </div>
@@ -173,7 +177,7 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- <script src="js/webflow.js"></script> -->
-<script src="js/common.js"></script>
+<!-- <script src="js/common.js"></script> -->
 <script src="js/default.js"></script>
 
 </body>

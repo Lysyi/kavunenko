@@ -3,10 +3,10 @@
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (mobile) */
-@media (min-width: 319px) {
+@media (min-width: 300px) {
   
   .main-container {
-    bottom: auto;
+    // bottom: auto;
   }
 
   .header-block {
@@ -48,19 +48,82 @@
     width: auto;
     padding: 0 0 0 0;
     background-color: none;
-    // .discount {
-    //   width: 50% !important;
-    //   margin: 10px auto;
-    // }
   }
 
-  .add-click-btn {
+  .one-more-btn {
     span {
       .border-radius(25px);
-      float: left;
-      margin: -5px -100px 0 10px;
-      padding: 5px 12px;
+      // float: left;
+      position: absolute;
+      width: 34px;
+      margin: -5px 0 0 10px;
+      padding: 5px 0 5px 0;
       border: solid #fff 1px;
+      text-align: center; 
+    }
+  }
+
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+
+  .coupon-container {
+    width: 98%;
+    min-height: 210px;
+    margin: 160px auto;
+  }
+
+  .coupon-block {
+    width: 100%;
+    height: 240px;
+    top: -20px;
+  }
+
+  .coupon-cover {
+    width: 100%;
+    height: 240px;
+    top: 100px;
+  }
+
+  .coupon-content { 
+    width: 96%;
+    height: 320px;
+    left: 2%;
+  }
+
+  .coupon-content-stage1 {
+    padding: 40px 20px;
+    .title {
+      padding: 0 0 5px 0;
+      font-size: 15px;
+    }
+    .coupon-form {
+      margin: 0 auto;
+      padding: 10px 0;
+      text-align: center;
+      .input {
+        display: block;
+        width: 100%;
+        margin: 0 0 10px 0;
+        padding: 10px 5px;
+        font-size: 12px;
+      }
+      .submit {
+        margin: 0 5px;
+        padding: 10px 5px;
+        font-size: 12px;
+      }
+    }
+    .coupon-table {
+      td {
+        font-size: 12px;
+      }
+    }
+    .deadline {
+      padding: 5px 30px;
+      color: #000;
+      font-size: 11px;
+      line-height: 12px;
     }
   }
 
@@ -173,6 +236,12 @@
     top: auto !important;
     margin: 10px 0 0 0 !important;
     width: auto !important;
+  }
+
+  .send-discount-form {
+    .input {
+      width: 320px !important;
+    }
   }
   
 }
