@@ -73,6 +73,10 @@
   background-repeat: no-repeat; 
 }
 
+.coupon-block-2 {
+  background-image: none;
+}
+
 .coupon-cover {
   z-index: 13;
   position: absolute;
@@ -89,7 +93,7 @@
   position: absolute;
   width: 560px;
   height: 440px;
-  top: -120px;
+  top: 40px;
   left: 20px;
   background-image: url(../images/coupon-bg02-2.png);
   background-size: 100% 100%;
@@ -100,7 +104,7 @@
   display: none;
   .border-radius(15px);
   position: absolute;
-  margin: 120px 0 0 100px;
+  margin: 130px 0 0 120px;
   padding: 35px 40px 40px 40px;
   border: solid #00ab68 3px;
   color: #00ab68;
@@ -112,9 +116,9 @@
 .coupon-content-stage1 {
   padding: 60px 40px;
   .title {
-    padding: 0 0 15px 0;
+    padding: 0 40px 15px 0;
     color: #bcc0c4;
-    font-size: 23px;
+    font-size: 21px;
   }
   .cross-out {
     text-decoration: line-through;
@@ -142,6 +146,39 @@
       background-color: #21cc57;
       color: #fff;
       font-size: 15px;
+    }
+  }
+  .coupon-info-form {
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: right;
+    .input, .textarea {
+      width: 100%;
+      margin: 0 0 10px 0;
+      padding: 0 15px 10px 15px;
+      border: none;
+      border-bottom: solid #000 1px;
+      background: none;
+      color: #000;
+      font-size: 15px;
+    }
+    .textarea {
+      height: 60px;
+      margin: 0 0 20px 0;
+    }
+    .submit {
+      .border-radius(5px);
+      display: inline-block;
+      margin: 0 5px;
+      padding: 15px 10px;
+      border: none;
+      background-color: #21cc57;
+      color: #fff;
+      font-size: 15px;
+    }
+    .submit-2 {
+      background-color: #fff;
+      color: #000;
     }
   }
   .coupon-table {
