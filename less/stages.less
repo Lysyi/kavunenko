@@ -34,6 +34,7 @@
   color: #212121;
   font-size: 18px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .user-avatar {
@@ -66,11 +67,15 @@
 
 .attempts-block {
   float: right;
-  padding: 18px 20px 0 20px;
+  padding: 16px 20px 0 20px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: #00ab68;
   font-size: 14px;
+  span {
+    float: left;
+    padding: 2px 0 0 0;
+  }
   .attempts {
     .border-radius(25px);
     float: left;
@@ -146,7 +151,11 @@
   .price {
     padding: 10px 0;
     font-size: 40px;
-    letter-spacing: -3px;
+    letter-spacing: 2px;
+    sup {
+      padding: 0 0 0 2px;
+      letter-spacing: 2px;
+    }
   }
   span {
     display: block;
